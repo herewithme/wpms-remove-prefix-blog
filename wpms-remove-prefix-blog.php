@@ -1,14 +1,17 @@
 <?php
 /*
- Plugin Name: WPMS - Remove prefix /blog/
- Version: 1.0
- Plugin URI: http://www.beapi.fr
- Description: Remove prefix /blog/ for main website of WordPress Network Installation.
- Author: BeAPI
- Author URI: http://www.beapi.fr
+Plugin Name: WPMS - Remove prefix /blog/
+Version: 1.0
+Plugin URI: http://www.beapi.fr
+Description: Remove prefix /blog/ for main website of WordPress Network Installation.
+Author: BeAPI
+Author URI: http://www.beapi.fr
 
- Copyright 2011 - BeAPI Team (technique@beapi.fr)
- */
+This plugin is based on http://buddydev.com/plugins/remove-blog-slug-plugin/v1-1/
+But this plugin not use PCRE Functions for better performance
+
+Copyright 2012 - BeAPI Team (technique@beapi.fr)
+*/
 
 // Check permalink update,category base update and tag base update
 add_filter('pre_update_option_' . 'category_base', 'wpms_remove_prefix_blog');

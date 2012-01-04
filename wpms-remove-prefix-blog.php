@@ -25,6 +25,6 @@ function wpms_remove_prefix_blog($structure_permalink) {
 	if ( substr($structure_permalink, 0, 6) != '/blog/' )
 		return $structure_permalink;
 	
-	return substr($structure_permalink, 6, strlen($structure_permalink));
+	return substr($structure_permalink, 5, strlen($structure_permalink));
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WPMS - Remove prefix /blog/
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://www.beapi.fr
 Description: Remove prefix /blog/ for main website of WordPress Network Installation.
 Author: BeAPI
@@ -27,4 +27,3 @@ function wpms_remove_prefix_blog($structure_permalink) {
 	
 	return substr($structure_permalink, 5, strlen($structure_permalink));
 }
-?>
